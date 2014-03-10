@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Jeremy Hintz Projects</title>
+
+    <link rel="stylesheet" href="css/mix.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type='text/javascript' src='scripts/jjhintz_jquery.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mixItUp.js'></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+        $(function(){
+        $('#Container').mixItUp();
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div id="black"></div>
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='index.html'><span>Home</span></a></li>
+            <li><a href='about.html'><span>About</span></a></li>
+            <li><a href='resume.html'><span>R&eacute;sum&eacute;</span></a></li>
+            <li><a href='projects.html'><span>Projects</span></a></li>
+            <li><a href='#'><span>Publications</span></a></li>
+            <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+        </ul>
+    </div>
+    </br>
+    </br>
+    </br>
+    <div class="controls">
+      <label>Filter:</label>
+      
+        <button class="filter" data-filter="all">All</button>
+        <button class="filter" data-filter=".web">Web</button>
+        <button class="filter active" data-filter=".iOS">iOS</button>
+      
+      </br>
+      </br>
+      <label>Sort by:</label>
+      
+      <button class="sort" data-sort="dateorder:desc">Most Recent</button>
+      <button class="sort" data-sort="myorder:desc">Coolest</button>
+    </div>
+    <div id="Container" class="container">
+      <div class="mix web" data-dateorder="1" data-myorder="1"></div>
+      <div class="mix web" data-dateorder="2" data-myorder="3"></div>
+      <div class="mix web" data-dateorder="3" data-myorder="5"></div>
+      <div class="mix iOS" data-dateorder="4" data-myorder="7"></div>
+      <div class="mix web" data-dateorder="5" data-myorder="8"></div>
+      <div class="mix web" data-dateorder="6" data-myorder="4"></div>
+      <div class="mix iOS" data-dateorder="7" data-myorder="2"></div>
+      <div class="mix iOS" data-dateorder="8" data-myorder="6"></div>
+      
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+</body>
+</html>
