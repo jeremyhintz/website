@@ -5,7 +5,7 @@
 
     <title>Jeremy Hintz Projects</title>
 
-    <link rel="stylesheet" href="css/mix.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,6 +14,7 @@
     <script type='text/javascript' src='scripts/jjhintz_jquery.js'></script>
     <script type='text/javascript' src='scripts/jquery.mixItUp.js'></script>
 
+    <script src="scripts/responsive-nav.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript">
@@ -25,17 +26,19 @@
 </head>
 
 <body>
-    <div id="black"></div>
-    <div id='cssmenu'>
-        <ul>
-            <li><a href='index.html'><span>Home</span></a></li>
-            <li><a href='about.html'><span>About</span></a></li>
-            <li><a href='resume.html'><span>R&eacute;sum&eacute;</span></a></li>
-            <li><a href='projects.html'><span>Projects</span></a></li>
-            <li><a href='#'><span>Publications</span></a></li>
-            <li class='last'><a href='contact.html'><span>Contact</span></a></li>
-        </ul>
-    </div>
+    <header>
+      <a href="" class="logo"></a>
+        <nav class="nav-collapse">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="resume.html">R&Eacute;SUM&Eacute;</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="publications.html">PUBLICATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
     </br>
     </br>
     </br>
@@ -45,6 +48,7 @@
         <button class="filter" data-filter="all">All</button>
         <button class="filter" data-filter=".web">Web</button>
         <button class="filter active" data-filter=".iOS">iOS</button>
+        <button class="filter active" data-filter=".academic">Academic</button>
       
       </br>
       </br>
@@ -55,16 +59,37 @@
     </div>
     <div id="Container" class="container">
       <div class="mix web" data-dateorder="1" data-myorder="1"></div>
-      <div class="mix web" data-dateorder="2" data-myorder="3"></div>
+      <div class="mix academic" data-dateorder="2" data-myorder="3"></div>
       <div class="mix web" data-dateorder="3" data-myorder="5"></div>
       <div class="mix iOS" data-dateorder="4" data-myorder="7"></div>
       <div class="mix web" data-dateorder="5" data-myorder="8"></div>
-      <div class="mix web" data-dateorder="6" data-myorder="4"></div>
+      <div class="mix academic" data-dateorder="6" data-myorder="4"></div>
       <div class="mix iOS" data-dateorder="7" data-myorder="2"></div>
       <div class="mix iOS" data-dateorder="8" data-myorder="6"></div>
+      <div class="mix academic" data-dateorder="9" data-myorder="9"></div>
       
       <div class="gap"></div>
       <div class="gap"></div>
     </div>
+
+    <div id="foot">
+        <p style="text-align:center; text-transform:uppercase; opacity:0.5;">Connect with me on:</p>
+        <table>
+          <tr>
+            <td><a href="https://www.facebook.com/jjhintz"><span class="icon-facebook"></span></a></td>
+            <td><a href="https://www.linkedin.com/in/jeremyhintz"><span class="icon-linkedin"></span></a></td>
+            <td><a href="https://github.com/"><span class="icon-github"></span></a></td>
+            <td><a href="https://twitter.com/Jeremy_Hintz"><span class="icon-twitter"></span></a></td>
+            <td><a href="https://plus.google.com/u/0/116376755231368807969/posts"><span class="icon-googleplus"></span></a></td>
+          </tr>
+        </table>
+      </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type='text/javascript' src='scripts/jjhintz_jquery.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mixItUp.js'></script>
+    <script src="scripts/fastclick.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/fixed-responsive-nav.js"></script>
 </body>
 </html>
