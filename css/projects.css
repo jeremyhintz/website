@@ -2,9 +2,6 @@ body, button{
   font-family: 'Latos', sans-serif;
 }
 
-#cssmenu{
-  margin-top: -50px;
-}
 .controls{
   padding: 2%;
   background: transparent;
@@ -91,9 +88,12 @@ button + label{
 
 .container .mix{
   text-align: left;
-  background: #03899c;
   margin-bottom: 2%;
   display: none;
+}
+
+img{
+  width: 100%;
 }
 
 .container .mix.category-1{
