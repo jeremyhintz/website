@@ -1,3 +1,23 @@
+html {
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(../images/background_images/projects/two_monitors_low.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media screen and (min-width: 512px) {
+  html {
+    background-image: url(../images/background_images/projects/two_monitors_med.png);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    background-image: url(../images/background_images/projects/two_monitors_full.png);
+  }
+}
+
 body, button{
   font-family: 'Latos', sans-serif;
 }

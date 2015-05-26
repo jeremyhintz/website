@@ -1,3 +1,28 @@
+html {
+  	min-height: 100%;
+  	background-size: cover;
+  	background-image: url(../images/background_images/resume/typewriter_w_geometric_low.png);
+  	background-repeat: no-repeat;
+  	background-position: center top;
+}
+
+@media screen and (min-width: 512px) {
+	html {
+		background-image: url(../images/background_images/resume/typewriter_w_geometric_med.png);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	html {
+		background-image: url(../images/background_images/resume/typewriter_w_geometric_full.png);
+	}
+
+  	h1 {
+		margin-top: 225px;
+		font-size: 54px;
+	}
+}
+
 #resume{
 	margin-top: 50px;
 	font-family: 'Lato', sans-serif;
