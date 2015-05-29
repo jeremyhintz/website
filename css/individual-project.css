@@ -1,3 +1,11 @@
+html {
+  	min-height: 100%;
+  	background-size: cover;
+  	background-image: url(../images/background_images/home/macbook_w_code_and_geometric_low.png);
+  	background-repeat: no-repeat;
+  	background-position: center top;
+}
+
 body{
 	margin: 0;
 }
@@ -19,6 +27,7 @@ h2 {
 
 h3 {
 	margin-left: 5%;
+	color: white;
 }
 
 h4 {
@@ -28,6 +37,22 @@ h4 {
 p{
 	margin-left: 5%;
 	margin-right: 5%;
+	color: white;
+}
+
+ul {
+	padding-left:10%;
+	color: white;
+}
+
+#content{
+	margin: auto;
+	padding-left: auto;
+	padding-right: auto;
+	margin-top: 75px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid transparent;
 }
 
 .screenshots {
@@ -48,16 +73,6 @@ p{
 	max-width: 512px;
 }
 
-#content{
-	margin: auto;
-	padding-left: auto;
-	padding-right: auto;
-	margin-top: 75px;
-	width: 100%;
-	background: #F0F0F0;
-	border: 1px solid transparent;
-}
-
 .b-and-a {
 	width: 80%;
 	max-width: 1024px;
@@ -66,6 +81,13 @@ p{
 .screenshots td {
 	text-align: center;
 	width: 50%;
+}
+
+#project-image {
+	width: 80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 @media screen and (max-width: 800px){
@@ -79,5 +101,17 @@ p{
 
 	.b-and-a {
 		width: 90%;
+	}
+}
+
+@media screen and (min-width: 512px) {
+	html {
+		background-image: url(../images/background_images/home/macbook_w_code_and_geometric_med.png);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	html {
+		background-image: url(../images/background_images/home/macbook_w_code_and_geometric_full.png);
 	}
 }
