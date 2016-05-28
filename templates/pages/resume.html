@@ -1,0 +1,170 @@
+{% extends 'layouts/main.html' %}
+{% block title %} - About{% endblock %}
+{% block extrastyle %}
+<link rel="stylesheet" href="../../static/css/resumestyle.css">
+{% endblock %}
+{% block content %}
+
+<table>
+  <tr>
+    <td>
+      <a href="../../static/assets/Jeremy-Hintz-Resume.pdf" target="_blank" class="redButton"><span class="icon-file-pdf" style="font-size:20px;"> </span> <span style="font-size:16px; font-family:'Lato';">    Download PDF </span></a>
+    </td>
+  </tr>
+</table>
+        
+<section class="cf" id="resume">
+  <div id="contact-info">
+    <p>
+      <a href="mailto:jeremy.hintz@utexas.edu">jeremy.hintz@utexas.edu</a><br />
+      <a href="tel:2148831547">214.883.1547</a><br />
+      <a href="http://www.jjhintz.com">www.jjhintz.com</a>
+    </p>
+  </div>   
+  <section>
+    <h1><strong>Jeremy</strong> Hintz</h1>
+    <article id="education">
+      <h2>Education</h2>
+      <h3>The University of Texas at Austin</h3>
+      <p>B.S Computer Science<br>Graduation Date: Dec 2015  |  CS GPA: 3.60</p>
+    </article>
+                
+    <article id="experience"> 
+      <h2>Experience</h2>
+      <br>
+
+      <!-- OS TA -->
+      <div id="company">
+        <a href="http://www.realmassive.com/" target="_blank"><img src="../../static/img/utcs_logo.png" alt="RealMassive"></a>
+        <h6>Jan 2015 - Present</h6>
+      </div>
+      <h4>Teaching Assistant: CS 439 Operating Systems</h4>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Instruct students on concepts such as synchronization, virtual memory, heap memory managment, file systems, and networks
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Lead two weekly discussion sections of 30 students each; hold weekly office hours to assist with projects; grade assignments and exams
+      </p>
+
+      <!-- RealMassive -->
+      <div id="company">
+        <a href="http://www.realmassive.com/" target="_blank"><img src="../../static/img/realmassive-logo.png" alt="RealMassive"></a>
+        <h6>May 2014 - Dec 2014</h6>
+      </div>
+      <h4>Software Engineering Intern</h4>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Contributed to front and back-end development of company’s main web app product built on GoogleCloud Platform, Python, and Angular.JS
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Built a bot that scraped the RealMassive database using the Google App Engine Python NBD Datastore API and syndicated updates to Twitter
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Developed iOS application that interacts with RealMassive public API using RestKit, Google Maps SDK, SendGrid API and LinkedIn API
+      </p>
+
+      <!-- Mutual Mobile -->
+      <div id="company">
+        <a href="http://www.mutualmobile.com/" target="_blank"><img src="../../static/img/mm-logo-blue.png" alt="mutual mobile"></a>
+        <h6>August 2013 - May 2014</h6>
+      </div>
+      <h4>Business Development Intern</h4>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Partnered with company business leaders &amp; product managers to leverage market intelligence into innovative products for Fortune 500 clients
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Developed strategies to utilize emerging technologies such as wearables, beacons and internet of things to drive increased sales and growth
+      </p>
+
+      <!-- Samsung Austin Semiconductor -->
+      <div id="company">
+        <a href="http://www.samsung.com/global/business/semiconductor/" target="_blank"><img src="../../static/img/sas-logo.jpg" alt="samsung"></a>
+        <h6>June 2013 - August 2013</h6>
+      </div>
+      <h4>Engineering Undergraduate Intern</h4>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Engineered a solution to major manufacturing stop-loss by developing new methodology for isolating outliers in data analysis
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Supervised a team of 6 engineering technicians to implement afforementioned solution within an accelerated timeline
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Raised overall throughput of target sector by 4%, representing direct cost savings of $640,000 per quarter
+      </p>
+
+      <!-- BlackBerry --> 
+      <div id="company">
+        <a href="http://us.blackberry.com/" target="_blank"><img src="../../static/img/bb-logo.png" alt="mutual mobile"></a>
+        <h6>January 2013 - May 2013</h6>
+      </div>
+      <h4>Product Design Intern</h4>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Contributed in component-level design of LCD-Touch Panel assembly and housing-chassis assembly for keyboardless smartphone
+      </p>
+      <p style="font-size: 13px; margin-bottom: 10px;">
+        Increased efficiency of product testing by developing and implementing automated test methodology using Java and Swing
+      </p>
+    </article>
+  </section>
+  <aside>
+    <h2>Courses</h2>
+    <dl>
+      <dd>Data Structures (Java)</dd>
+      <dd>Dicrete Math</dd>
+      <dd>Computer Architecture (C)</dd>
+      <dd>Operating Systems (C)</dd>
+      <dd>Algorithms &amp; Complexity</dd>
+      <dd>Intro to Data Mining (R)</dd>
+      <dd>Mobile Computing (Java)</dd>
+      <dd>iOS Development (Obj-C)</dd>
+      <dd>3D Computer Vision (Python)</dd>
+      <dd>Longhorn Startup</dd>
+    </dl>
+  </aside>
+  <aside>
+    <h2>Skills</h2>
+    <dl>
+      <dt>Languages</dt>
+      <dd>Java</dd>
+      <dd>C</dd>
+      <dd>Python</dd>
+      <dd>Objective-C</dd>
+      <dd>HTML/CSS</dd>
+      <dd>C++</dd>
+    </dl>
+    <dl>
+      <dt>APIs &amp; Frameworks</dt>
+      <dd>Google Cloud Platform</dd>
+      <dd>Bootstrap</dd>
+      <dd>Django/Jinja2</dd>
+      <dd>OpenCV</dd>
+    </dl>
+    <dl>
+      <dt>Open Source</dt>
+      <dd>OpenCV</dd>
+      <dd>YARRT</dd>
+    </dl>
+    <dl>
+      <dt>Tools</dt>
+      <dd>Git &amp; Github</dd>
+      <dd>Android Studio</dd>
+      <dd>XCode</dd>
+    </dl>
+  </aside>
+  <aside>
+    <dl>
+      <h2>Projects</h2>
+      <br>
+      <dd>Selfie Studio</dd>
+      <dd>Longhorn Game Plan</dd>
+      <dd>Daily Texan Web</dd>
+      <dd>CRENow</dd>
+      <dd>RealMassive for iOS</dd>
+      <dd>More...</dd>
+    </dl>
+  </aside>
+  <footer></br></footer>
+</section>
+<br>
+<br>
+
+{% endblock %}

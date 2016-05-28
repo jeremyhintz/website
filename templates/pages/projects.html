@@ -1,0 +1,79 @@
+{% extends 'layouts/main.html' %}
+{% block title %} - Projects{% endblock %}
+{% block prependedstyle %}
+<link rel="stylesheet" href="../../static/css/projects.css">
+{% endblock %}
+{% block extrastyle %}
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type='text/javascript' src='../../static/js/jjhintz_jquery.js'></script>
+<script type='text/javascript' src='../../static/js/libs/jquery.mixItUp.js'></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#Container').mixItUp();
+  });
+</script>
+{% endblock %}
+
+{% block content %}
+
+</br>
+</br>
+</br>
+<div class="controls">    
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".computer-vision">Computer Vision</button>
+  <button class="filter" data-filter=".web">Web</button>
+  <button class="filter" data-filter=".ios">iOS</button>
+  <button class="filter" data-filter=".android">Android</button>
+  <button class="filter" data-filter=".python">Python</button>
+  <button class="filter" data-filter=".java">Java</button>
+  <button class="filter" data-filter=".c">C</button>
+  </br>
+  </br>
+  <h3 style="text-align: center;">More Coming Soon!</h3>
+</div>
+<div id="Container" class="container">
+
+  <!-- Computer Vision Final Project -->
+  <a href="projects/cvcheckers.html"><div class="mix python computer-vision" data-dateorder="3" data-myorder="CV Checkers"><img src="../../static/img/cvcheckersthumbnail.png"></div></a>
+
+  <!-- GAME PLAN IOS -->
+  <a href="projects/gameplan-ios.html"><div class="mix ios" data-dateorder="1" data-myorder="Game Plan iOS App"><img src="../../static/img/gameplan-stock.png"></div></a>
+
+  <!-- Selfie Studio -->
+  <a href="projects/selfiestudio.html"><div class="mix java android computer-vision" data-dateorder="3" data-myorder="Selfie Studio"><img src="../../static/img/selfiestudio_icon.png"></div></a>
+
+  <!-- REALMASSIVE TWITTERBOT -->
+  <a href="projects/crenow.html"><div class="mix web python" data-dateorder="3" data-myorder="CRENow&#0153;"><img src="../../static/img/twitter-bot-code.png"></div></a>
+
+  <!-- REALMASSIVE IOS -->
+  <a href="projects/realmassive-ios.html"><div class="mix ios" data-dateorder="2" data-myorder="RealMassive for iOS"><img src="../../static/img/realmassive-ios.jpg"></div></a>
+
+  <!-- Computer Vision Projects -->
+  <a href="projects/cvprojects.html"><div class="mix python computer-vision" data-dateorder="3" data-myorder="Computer Vision Projects"><img src="../../static/img/cvprojects.png"></div></a>
+
+  <!-- DTDELTA -->
+  <a href="projects/dailytexanonline.html"><div class="mix web" data-dateorder="3" data-myorder="The Daily Texan Online"><img src="../../static/img/dtdelta-cover-photo.jpg"></div></a>
+
+  <!-- PintOS -->
+  <a href="projects/pintos.html"><div class="mix c" data-dateorder="3" data-myorder="Pintos"><img src="../../static/img/pintos.png"></div></a>
+
+  <!-- CS 314 Projects -->
+  <a href="projects/cs314projects.html"><div class="mix java" data-dateorder="3" data-myorder="CS 314 Projects"><img src="../../static/img/314-project-10.png"></div></a>
+
+  <!-- CS 429 Projects -->
+  <a href="projects/cs429projects.html"><div class="mix c" data-dateorder="3" data-myorder="CS 429 Projects"><img src="../../static/img/429-project-3-6.png"></div></a>
+
+</div>
+<div class="gap"></div>
+<div class="gap"></div>
+<!-- </div> -->
+
+{% endblock %}
+
+{% block extrascripts %}
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type='text/javascript' src='../../static/js/jjhintz_jquery.js'></script>
+<script type='text/javascript' src='../../static/js/libs/jquery.mixItUp.js'></script>
+{% endblock %}
